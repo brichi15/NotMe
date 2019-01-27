@@ -3,7 +3,7 @@ import serial
 
 
 arduinoData = serial.Serial('com6',9600)
-speech = LiveSpeech(lm=False, keyphrase='shot', kws_threshold=1e-10)
+speech = LiveSpeech(lm=False, keyphrase='shot', kws_threshold=1e-8)
 
 for phrase in speech:
 
