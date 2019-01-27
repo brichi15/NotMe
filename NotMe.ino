@@ -28,10 +28,12 @@ void loop() {
   serialData = sRead();
   bval = digitalRead(button);
   
-  if(serialData||bval){
+  if(serialData){
     myServo.write(2);
     delay(2000);
   }
-
-  myServo.write(178);
+  else if(bval){
+    myServo.write(2);
+  }
+  else myServo.write(178);
 }
