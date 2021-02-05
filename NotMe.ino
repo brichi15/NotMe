@@ -14,7 +14,6 @@ int sRead(){
 
   return serialData;
 }
-
                       //////////////////////setup and loop//////////////
 void setup() {
   Serial.begin(9600); 
